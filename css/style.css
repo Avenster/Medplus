@@ -2,6 +2,7 @@
 
 *{
     margin:0px;
+	font-family: "Open Sans", sans-serif; 
     
 }
 
@@ -11,12 +12,11 @@
     background-color:#fff;
     color: rgb(190, 205, 218);
     border-radius: 20px;
-    margin: 100px 600px;
-   
-   
- 
-    
-    
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 100%;
     
 }
 
@@ -35,11 +35,7 @@
   
   
 
-.Medicines{
-    margin:auto;
-    padding:10px 30px;
-   
-}
+
 .navbar {
     text-align: left;
     
@@ -90,7 +86,28 @@
 
 
   @import url('https://fonts.googleapis.com/css?family=Lato');
+ol{
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+#header{
+	display: flex;
+	justify-content: space-evenly;
+}
+#header ul{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	height: 100%;
 
+}
+  .fa{
+	color: black;
+  }
 .menu {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
@@ -244,18 +261,16 @@ body {
 }
 #wrapper{
 	overflow: hidden;
-	height: 1153px;
-	width: 1643px;
+	height: 100%;
+	width: 100%;
 	background:#fff;
+	display: flex;
+	flex-direction: row;
 }
 #header{
 	height:92px; 
-	
-	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1448px -2px no-repeat;
 	border-bottom:1px solid #eee;
-	
 }
-#header ul{padding:33px 0 0 45px;}
 #header li{
 	list-style:none;
 	float:left;
@@ -320,14 +335,14 @@ body {
 #sidebar{
 	float:left;
 	background:#fff;
-	width:275px;	
+	width: 20%;
 	padding:13px 0 0 45px;
-	height:1400px;
+	height: 100%;
 	border-right:1px solid #eee;
 }
 #sidebar h3{
 	color:#262626;
-	text-transform:uppercase;
+	text-transform:uppercachecklistse;
 	font-size:14px;
 	font-weight:700;
 	padding:35px 0 10px 0;
@@ -351,6 +366,7 @@ body {
 	list-style:none;
 	padding: 7px 0 7px 23px;
 }
+
 .checklist li span{
 	float:left;
 	width:11px;

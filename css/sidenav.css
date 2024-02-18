@@ -35,23 +35,11 @@ label .hint {
     padding: 0;
     transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-label .hint::before, label .hint .bar, label .hint::after {
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 12%;
-    background: white;
-    content: '';
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
+
 label .hint .bar {
     top: 44%;
 }
-label .hint::before {
-    top: 0;
-    transform-origin: top left;
-}
+
 label .hint::after {
     bottom: 0;
     transform-origin: bottom left;

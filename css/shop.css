@@ -5,15 +5,15 @@ body {
 	font-family: "Open Sans", sans-serif; 
 }
 #wrapper{
-	overflow: hidden;
-	height: 1153px;
-	width: 1643px;
+	overflow: scroll;
+	height: 100vh;
+	width: 100%;
 	background:#fff;
+	position: relative;
 }
 #header{
-	height:92px; 
-	
-	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/header-icons.png") 1448px -2px no-repeat;
+	height: 10vh;
+	width: 100%;
 	border-bottom:1px solid #eee;
 	
 }
@@ -73,18 +73,16 @@ body {
  
 
 #grid{	
-	width: 1335px;
 	position: absolute;
-	left: 340px;
-	height: 1200px;
-	top: 180px;
+	width:80%;
+	right:0;
+	height: 100%;
 }
 #sidebar{
 	float:left;
 	background:#fff;
-	width:275px;	
+	width:20%;
 	padding:13px 0 0 45px;
-	height:1400px;
 	border-right:1px solid #eee;
 }
 #sidebar h3{
@@ -221,12 +219,14 @@ body {
 	margin-left:-21px;
 }
 #sidebar img{margin-top:6px;}
-
+.stats{
+	height: 40%;
+	width: 100%;
+}
 .product{
     position: relative;
-    perspective: 800px;
-    width:306px;
-    height:471px;
+	width: 30%;
+	height: 60%;
     transform-style: preserve-3d;
     transition: transform 5s;
 	float:left; 
@@ -237,7 +237,9 @@ body {
 		 -o-transition: width 500ms ease-in-out;
  		    transition: width 500ms ease-in-out;
 }
-.product-front img{width:100%;}
+.product-front img
+{width:auto;
+height: 50%;}
 .product-front, .product-back{
 	width:315px;
 	height:480px;
@@ -265,12 +267,11 @@ div.large .product-back{
             transition: all 100ms ease-out; 
 }
 .make3D{
-	width:305px;
-	height:470px;
+	width: 100%;
+	height: 50%;
 	position:absolute;    
 	top:10px;
 	left:10px;	
-	overflow:hidden;
     transform-style: preserve-3d;
 	-webkit-transition:  100ms ease-out; 
        -moz-transition:  100ms ease-out; 
@@ -305,33 +306,11 @@ div.make3D.flip180{
               transform: rotateY( 180deg );
 			   transition:  150ms ease-out; 			
 }
-.make3D.animate{
-	top:5px;
-	left:5px;
-	width:315px;
-	height:480px;
-	box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0.15);
-	-webkit-transition:  100ms ease-out; 
-       -moz-transition:  100ms ease-out; 
-         -o-transition:  100ms ease-out; 
-            transition:  100ms ease-out; 
-}
-div.large .make3D{
-	top:0;
-	left:0;
-	width:315px;
-	height:480px;
-	-webkit-transition:  300ms ease-out; 
-       -moz-transition:  300ms ease-out; 
-         -o-transition:  300ms ease-out; 
-            transition:  300ms ease-out; 
-}
-.large div.make3D{box-shadow:0px 5px 31px -1px rgba(0, 0, 0, 0);}
+
 .large div.flip-back{display:none;}
 .stats-container{
 	background:#fff;	
 	position:absolute;
-	top:382px;
 	left:0;
 	width: 252px;
 	height: 300px;
@@ -340,13 +319,6 @@ div.large .make3D{
        -moz-transition: all 200ms ease-out; 
          -o-transition: all 200ms ease-out; 
             transition: all 200ms ease-out;
-}
-.make3D.animate .stats-container{
-	top:265px;
-	-webkit-transition: all 200ms ease-out; 
-       -moz-transition: all 200ms ease-out; 
-         -o-transition: all 200ms ease-out; 
-            transition: all 200ms ease-out; 
 }
 .stats-container .product_name{
 	font-size: 15px;
@@ -373,13 +345,7 @@ div.large .make3D{
 	background:#5ff7d2;
 	opacity:0;	
 }
-.make3D.animate .image_overlay{
-	opacity:0.7;	
-	-webkit-transition: all 200ms ease-out; 
-       -moz-transition: all 200ms ease-out; 
-         -o-transition: all 200ms ease-out; 
-            transition: all 200ms ease-out; 
-}
+
 .product-options{
 	padding:0;
 }

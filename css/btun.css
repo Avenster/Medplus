@@ -58,10 +58,10 @@ button {
 .Medicines{
  border-radius: 20px;
  background-color: white;
-  max-width: 320px;
-  max-height: 400px;
- 
+ width: 30%;
+ height: 100%;
   text-align: center;
   font-family: arial;
+  margin: 0;
   
 }

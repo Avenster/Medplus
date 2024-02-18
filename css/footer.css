@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 .footer {
-  position: relative;
   width: 100%;
-  background: black;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: black;
+  border-top: 1px solid rgba(0, 0, 0, 0.261);
 }
 
 .social-icon,
@@ -29,7 +29,7 @@
 
 .social-icon__link {
   font-size: 2rem;
-  color: #fff;
+  color: black;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
@@ -40,16 +40,22 @@
 
 .menu__link {
   font-size: 1.2rem;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.734);
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
   opacity: 0.75;
+  font-weight: 300;
+}
+.menu__link  a{
   font-weight: 300;
 }
 
 .menu__link:hover {
+  
   opacity: 1;
 }
 
